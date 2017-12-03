@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
+
+/****** NORMALIZATION ******/
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: $root_font_size;
+  line-height: $base_line_height;
+}
+
+body {
+  margin: 0;
+  font-family: $base_font_family;
+  color: $color_black;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/****** STYLES FOR FLEX ******/
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-space-between {
+  justify-content: space-between;
+}
+
+.flex-direction-column {
+  display: flex;
+  flex-direction: column;
+}

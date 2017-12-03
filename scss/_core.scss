@@ -1,0 +1,110 @@
+nav {
+  top: 0;
+  width: 100%;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    height: 6rem;
+    width: 80vw;
+
+    li {
+      padding: 0 25px;
+      cursor: pointer;
+    }
+  }
+}
+
+/****** ANIMATION FOR MENU ******/
+.animation {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  &:hover {
+    color: $color_primary;
+  }
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: $color_primary;
+  }
+  &:before {
+    left: -2.5px;
+  }
+  &:after {
+    right: 2.5px;
+    background: $color_primary;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+}
+
+.animation:hover:before {
+  background: $color_primary;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.animation:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.logo-right {
+  margin-right: auto;
+}
+
+.logo-size {
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.about {
+  height: 50vh;
+  padding: 0 20rem;
+  span {
+    color: $color_primary;
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+/****** ANIMATION FOR CAPTION ******/
+
+h1 {
+  border-right: .1em solid $color_black;
+  width: 25.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(21, end),
+  blink-caret .5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/****** STYLES FOR PROJECTS ******/
+.img-container {
+  flex: 300px;
+  height: 250px;
+  background: $color_primary;
+  margin: 1rem;
+}
+
