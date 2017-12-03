@@ -6,7 +6,6 @@ nav {
     padding: 0;
     margin: 0 auto;
     height: 6rem;
-    width: 80vw;
 
     li {
       padding: 0 25px;
@@ -66,7 +65,7 @@ nav {
 }
 
 .about {
-  height: 50vh;
+  height: 35rem;
   padding: 0 20rem;
   span {
     color: $color_primary;
@@ -80,6 +79,7 @@ nav {
 /****** ANIMATION FOR CAPTION ******/
 
 h1 {
+  font-size: 2rem;
   border-right: .1em solid $color_black;
   width: 25.8em;
   white-space: nowrap;
@@ -102,9 +102,88 @@ h1 {
 
 /****** STYLES FOR PROJECTS ******/
 .img-container {
-  flex: 300px;
-  height: 250px;
+  flex: 17rem;
+  height: 20rem;
   background: $color_primary;
   margin: 1rem;
 }
+//
+//.picture_perfect {
+//  background-image: url("/images/picture_perfect_edit-min.png");
+//  width: 100%;
+//  height: auto;
+//  background-size: cover;
+//  background-position: center center;
+//  filter: grayscale(100%);
+//  transition: .5s ease-in-out;
+//  &:hover {
+//    filter: grayscale(90%) hue-rotate(50deg);
+//    cursor: pointer;
+//  }
+//}
 
+
+.content {
+  position: relative;
+  width: 100%;
+  //max-width: 400px;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
