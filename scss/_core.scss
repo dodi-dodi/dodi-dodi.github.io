@@ -66,7 +66,6 @@ nav {
 
 .about {
   height: 35rem;
-  padding: 0 20rem;
   span {
     color: $color_primary;
     font-size: 3rem;
@@ -102,9 +101,8 @@ h1 {
 
 /****** STYLES FOR PROJECTS ******/
 .img-container {
-  flex: 17rem;
+  flex: 30%;
   height: 20rem;
-  background: $color_primary;
   margin: 1rem;
 }
 //
@@ -126,9 +124,7 @@ h1 {
 .content {
   position: relative;
   width: 100%;
-  //max-width: 400px;
   height: 100%;
-  margin: auto;
   overflow: hidden;
 }
 
