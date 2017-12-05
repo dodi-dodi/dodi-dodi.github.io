@@ -33,7 +33,7 @@ nav {
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url("/images/office.jpeg");
+  background-image: url("/images/hero-min.png");
   background-size: cover;
   background-position: center center;
   span {
@@ -133,8 +133,8 @@ h2 {
 
 /****** STYLES FOR PROJECTS ******/
 .img-container {
-  flex: 40%;
-  height: 30rem;
+  flex: 30%;
+  height:17rem;
   margin: 3rem 1rem;
 }
 
@@ -143,14 +143,10 @@ h2 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  filter: grayscale(100%) opacity(.8) brightness(130%);
-  &:hover {
-    filter: grayscale(0) brightness(110%);
-  }
 }
 
 .content .content-overlay {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0,0,0,0.6);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -184,13 +180,13 @@ h2 {
   transform: translate(-50%, -50%);
   transition: all 0.3s ease-in-out 0s;
   h3 {
-    color: $color_black;
+    color: $color_white;
     font-weight: 900;
     margin-bottom: 0.5em;
     text-transform: uppercase;
   }
   p {
-    color: $color_black;
+    color: $color_white;
     font-size: 1em;
   }
 }
@@ -203,8 +199,8 @@ h2 {
 }
 
 .content-link {
+  color: $color_white;
   display: block;
-  color: black;
   text-transform: uppercase;
   margin-bottom: 0.5em;
 }
