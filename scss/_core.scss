@@ -36,6 +36,7 @@ nav {
   background-image: url("/images/hero-min.png");
   background-size: cover;
   background-position: center center;
+  margin-bottom: $margin-section;
   span {
     color: $color_primary;
     font-size: 3rem;
@@ -95,16 +96,21 @@ nav {
   border-radius: 50%;
 }
 
-//.about {
-//  height: 35rem;
-//  span {
-//    color: $color_primary;
-//    font-size: 3rem;
-//  }
-//  p {
-//    font-size: 1.5rem;
-//  }
-//}
+
+
+/****** SECTION ABOUT ******/
+.about {
+  margin-bottom: $margin-section;
+  p {
+    font-size: 1.5rem;
+    color: $color_gray;
+    line-height: 2;
+    text-align: center;
+  }
+}
+
+
+
 
 /****** ANIMATION FOR CAPTION ******/
 
@@ -131,11 +137,14 @@ h2 {
   }
 }
 
-/****** STYLES FOR PROJECTS ******/
+/****** SECTION PROJECTS ******/
+.projects {
+  margin-bottom: $margin-section;
+}
 .img-container {
-  flex: 30%;
-  height:17rem;
-  margin: 3rem 1rem;
+  flex: 25%;
+  max-height: 17rem;
+  margin: 3rem;
 }
 
 .content {
@@ -227,4 +236,18 @@ h2 {
   border: 3px solid $color_primary;
   color: $color_primary;
   cursor: pointer;
+}
+
+
+/****** SECTION CONTACT ******/
+
+footer {
+  height: 10rem;
+  background: $color_main;
+}
+.email {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }

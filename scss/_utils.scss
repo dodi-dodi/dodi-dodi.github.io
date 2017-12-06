@@ -1,10 +1,15 @@
 $color_primary: #FF003B;
+$color_main: #EEEEEF;
 $color_black: #232323;
 $color_white: #f9f9f9;
+$color_gray: gray;
 
 $color_black_light: lighten($color_black, 20%);
 
+
+$container_max_width: 1200px;
 $root_font_size: 16px;
 $base_line_height: 1.5;
 $base_font_family: "Lato", sans-serif;
+$margin-section: 8rem;
 

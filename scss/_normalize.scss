@@ -19,7 +19,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: $container_max_width;
   margin: auto;
 }
 
