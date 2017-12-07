@@ -1,6 +1,8 @@
+/****** STYLES FOR HEADER ******/
 .section-title {
   text-align: center;
   color: $color_black-light;
+  font-size: 2rem;
   &:after {
     content: "";
     width: 4rem;
@@ -21,33 +23,25 @@ nav {
     height: 6rem;
 
     li {
-      padding: 0 25px;
+      padding: 0 1.6rem;
       cursor: pointer;
     }
   }
 }
 
-
-/****** STYLES FOR HERO ******/
-
-.hero {
-  width: 100%;
-  height: 100vh;
-  background-image: url("/images/hero-min.png");
-  background-size: cover;
-  background-position: center center;
-  margin-bottom: $margin-section;
-  span {
-    color: $color_primary;
-    font-size: 3rem;
-  }
+.logo-position {
+  margin-right: auto;
 }
 
-
-
+.logo-size {
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
 
 /****** ANIMATION FOR MENU ******/
-.animation {
+.menu-animation {
   position: relative;
   display: block;
   cursor: pointer;
@@ -71,49 +65,36 @@ nav {
     background: $color_primary;
     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
+
 }
 
-.animation:hover:before {
+.menu-animation:hover:before {
   background: $color_primary;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.animation:hover:after {
+.menu-animation:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
 }
 
-.logo-right {
-  margin-right: auto;
-}
-
-.logo-size {
-  width: 5rem;
-  height: 5rem;
-  padding: 1rem;
-  border-radius: 50%;
-}
-
-
-
-/****** SECTION ABOUT ******/
-.about {
+/****** STYLES FOR HERO ******/
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/hero-min.png");
+  background-size: cover;
+  background-position: center center;
   margin-bottom: $margin-section;
-  p {
-    font-size: 1.5rem;
-    color: $color_gray;
-    line-height: 2;
-    text-align: center;
+  span {
+    color: $color_primary;
+    font-size: 3rem;
   }
 }
 
-
-
-
 /****** ANIMATION FOR CAPTION ******/
-
 h2 {
   font-size: 2rem;
   border-right: .1em solid $color_black;
@@ -137,10 +118,22 @@ h2 {
   }
 }
 
+/****** SECTION ABOUT ******/
+.about {
+  margin-bottom: $margin-section;
+  p {
+    font-size: 1.5rem;
+    color: $color_gray;
+    line-height: 2;
+    text-align: center;
+  }
+}
+
 /****** SECTION PROJECTS ******/
 .projects {
   margin-bottom: $margin-section;
 }
+
 .img-container {
   flex: 25%;
   max-height: 17rem;
@@ -150,12 +143,12 @@ h2 {
 .content {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 97%;
   overflow: hidden;
 }
 
 .content .content-overlay {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -238,16 +231,25 @@ h2 {
   cursor: pointer;
 }
 
-
 /****** SECTION CONTACT ******/
-
-footer {
-  height: 10rem;
+.contact {
+  height: 12rem;
   background: $color_main;
 }
+
 .email {
   padding-top: 2rem;
-  text-align: center;
+  margin-bottom: 2rem;
   font-size: 1.2rem;
   font-weight: bold;
+  border-bottom: 2px solid $color_black;
+}
+
+.icon-container {
+  text-align: center;
+}
+
+.icon {
+  margin-right: 2rem;
+  text-align: center;
 }
