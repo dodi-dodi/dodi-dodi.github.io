@@ -17,6 +17,9 @@ nav {
   top: 0;
   width: 100%;
   ul {
+    @extend .flex;
+    @extend .flex-justify-center;
+    @extend .flex-align-center;
     list-style: none;
     padding: 0;
     margin: 0 auto;
@@ -25,6 +28,7 @@ nav {
     li {
       padding: 0 1.6rem;
       cursor: pointer;
+
     }
   }
 }
@@ -40,10 +44,10 @@ nav {
   border-radius: 50%;
 }
 
-.mobile-menu {
-  font-size: 3rem;
+.slicknav_menu {
   display: none;
 }
+
 /****** ANIMATION FOR MENU ******/
 .menu-animation {
   position: relative;
@@ -86,6 +90,9 @@ nav {
 
 /****** STYLES FOR HERO ******/
 .hero {
+  @extend .flex;
+  @extend .flex-justify-center;
+  @extend .flex-align-center;
   width: 100%;
   height: 100vh;
   background-image: url("/images/hero-min.png");
@@ -96,6 +103,10 @@ nav {
     color: $color_primary;
     font-size: 3.2rem;
   }
+}
+
+.mobile-text {
+  display: none;
 }
 
 /****** ANIMATION FOR CAPTION ******/
@@ -217,8 +228,8 @@ nav {
 
 /****** STYLE FOR BUTTON ******/
 .button {
+  display: block;
   background: $color_primary;
-  color: $color_white;
   font-size: 1rem;
   line-height: 3;
   padding: .1rem 1rem;
@@ -226,13 +237,21 @@ nav {
   text-align: center;
   border: 0;
   transition: all 0.3s ease 0s;
-}
 
-.button:hover {
-  background: $color_white;
-  border: 3px solid $color_primary;
-  color: $color_primary;
-  cursor: pointer;
+  &:hover {
+    background: $color_white;
+    border: 3px solid $color_primary;
+    cursor: pointer;
+
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: $color_white;
+    &:hover {
+      color: $color_primary;
+    }
+  }
 }
 
 /****** SECTION CONTACT ******/
@@ -258,17 +277,9 @@ nav {
   text-align: center;
 }
 
-
 /****** MEDIA QUERIES ******/
 
 @media (max-width: 576px) {
-  .mobile-menu {
-    font-size: 3rem;
-    display: block;
-  }
-  .flex-column {
-    flex-direction: column;
-  }
   .img-container {
     flex: 100%;
     max-height: 21rem;
@@ -276,8 +287,14 @@ nav {
   .about {
     margin: 0 3rem;
   }
+  .autotype-text {
+    display: none;
+  }
+  .mobile-text {
+    display: block;
+    margin: 0 3rem;
+  }
 }
-
 
 @media (max-width: 1140px) {
   .about {

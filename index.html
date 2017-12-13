@@ -12,21 +12,27 @@
 <body>
 
 <header>
-    <div class="container">
-        <nav>
-            <ul class="flex flex-justify-space-between flex-align-center flex-column">
-                <div class="mobile-menu">&#9776;</div>
-                <li class="logo-position">
-                    <img src="images/logo.png" class="logo-size" alt="logo">
-                </li>
-                <li><span class="menu-animation">ABOUT</span></li>
-                <li><span class="menu-animation">WORKS</span></li>
-                <li><span class="menu-animation">CONTACT</span></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="hero flex flex-justify-center flex-align-center">
-        <h2 class="autotype-text">Hi! I'm Dorota, a <span>Junior Frontend Developer</span></h2>>
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <div class="main-menu-content" id="menu-container">
+                    <ul id="main-menu">
+                        <li class="logo-position">
+                        <img src="images/logo.png" class="logo-size" alt="logo">
+                        </li>
+                        <li><span class="menu-animation"><a href="#"></a>ABOUT</span></li>
+                        <li><span class="menu-animation"><a href=" #"></a>WORKS</span></li>
+                        <li><span class="menu-animation"><a href=" #"></a>CONTACT</span></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+    <div class="hero">
+        <h2 class="autotype-text">Hi! I'm Dorota, a <span>Junior Frontend Developer</span></h2>
+        <h2 class="mobile-text">Hi! I'm Dorota, a <span> <br>Junior Frontend Developer</span></h2>
     </div>
 </header>
 
@@ -121,7 +127,9 @@
             </div>
         </div>
         <div class="flex flex-justify-center">
-            <button class="button">More on github</button>
+            <button class="button">
+                <a href="https://github.com/dodi-dodi">More on github</a>
+            </button>
         </div>
     </div>
 </section>
@@ -141,6 +149,7 @@
     </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
 

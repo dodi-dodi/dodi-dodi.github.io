@@ -22,26 +22,3 @@ body {
   max-width: $container_max_width;
   margin: auto;
 }
-
-/****** STYLES FOR FLEX ******/
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.flex-align-center {
-  align-items: center;
-}
-
-.flex-justify-center {
-  justify-content: center;
-}
-
-.flex-justify-space-between {
-  justify-content: space-between;
-}
-
-.flex-direction-column {
-  display: flex;
-  flex-direction: column;
-}
