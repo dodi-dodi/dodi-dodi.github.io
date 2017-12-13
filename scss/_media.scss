@@ -19,20 +19,23 @@
   nav {
     ul {
       flex-direction: column;
-      list-style: none;
-      padding: 0;
-      margin: 0 auto;
-      height: 6rem;
+      justify-content: center;
+      height: 10rem;
+      //display: none;
 
       li {
-        padding: 0;
+        padding: .6rem;
         cursor: pointer;
-
       }
     }
   }
-
-
+  .menu-hamburger {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 768px) {
