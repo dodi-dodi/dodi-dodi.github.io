@@ -17,8 +17,9 @@ nav {
   top: 0;
   width: 100%;
   ul {
+    position: relative;
     @extend .flex;
-    @extend .flex-justify-center;
+    @extend .flex-justify-end;
     @extend .flex-align-center;
     list-style: none;
     padding: 0;
@@ -28,13 +29,12 @@ nav {
     li {
       padding: 0 1.6rem;
       cursor: pointer;
-
     }
   }
 }
 
-.logo-position {
-  margin-right: auto;
+.logo-container {
+  position: absolute;
 }
 
 .logo-size {
@@ -42,10 +42,6 @@ nav {
   height: 5rem;
   padding: 1rem;
   border-radius: 50%;
-}
-
-.slicknav_menu {
-  display: none;
 }
 
 /****** ANIMATION FOR MENU ******/
