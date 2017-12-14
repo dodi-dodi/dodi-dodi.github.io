@@ -14,6 +14,7 @@
   .mobile-text {
     display: block;
     margin: 0 3rem;
+    text-align: center;
   }
 
   nav {
@@ -47,6 +48,14 @@
 @media (max-width: 992px) {
   .hero {
     background-image: url("/images/hero_992 -min.png");
+  }
+  .autotype-text {
+    display: none;
+  }
+  .mobile-text {
+    display: block;
+    margin: 0 3rem;
+    text-align: center;
   }
 }
 
