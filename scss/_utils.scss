@@ -12,42 +12,14 @@ $base_line_height: 1.5;
 $base_font_family: "Lato", sans-serif;
 $margin-section: 7rem;
 
-/****** STYLES FOR FLEX ******/
-//.flex {
-//  display: flex;
-//  flex-wrap: wrap;
-//}
-//
-//.flex-align-center {
-//  align-items: center;
-//}
-//
-//.flex-justify-center {
-//  justify-content: center;
-//}
-//
-//.flex-justify-end {
-//  justify-content: flex-end;
-//}
-//
-//.flex-justify-space-between {
-//  justify-content: space-between;
-//}
-//
-//.flex-direction-column {
-//  display: flex;
-//  flex-direction: column;
-//}
-
-
 
 @mixin flex() {
   display: flex;
   flex-wrap: wrap;
 }
 
-@mixin flex-basis($width) {
-  flex-basis: $width;
+@mixin flex-width($width) {
+  flex: $width;
 }
 
 @mixin justify-content($justify) {
@@ -58,5 +30,11 @@ $margin-section: 7rem;
   align-items: $align;
 }
 @mixin flex-direction($direction) {
-  flex-basis: $direction;
+  flex-direction: $direction;
 }
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
