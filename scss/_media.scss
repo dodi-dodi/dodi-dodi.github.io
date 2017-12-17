@@ -1,7 +1,7 @@
 /****** MEDIA QUERIES ******/
 
 @media (max-width: 576px) {
-  .img-container {
+  .project-container {
     flex: 100%;
     max-height: 21rem;
   }
@@ -17,20 +17,17 @@
     text-align: center;
   }
 
-  nav {
-    ul {
-      flex-direction: column;
-      justify-content: center;
-      height: 10rem;
-      display: none;
-
-      li {
-        padding: .6rem;
-        cursor: pointer;
-      }
-    }
+  .menu-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    height: 10rem;
+    display: none;
   }
-  .menu-hamburger {
+  .menu-item {
+    padding: .6rem;
+    cursor: pointer;
+  }
+  .menu-mobile {
     display: flex;
     justify-content: flex-end;
     font-size: 2rem;

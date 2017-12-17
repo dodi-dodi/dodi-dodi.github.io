@@ -13,47 +13,47 @@
   }
 }
 
-nav {
+.nav {
   top: 0;
   width: 100%;
   position: fixed;
   background: $color_white;
   z-index: 100;
-  ul {
-    position: relative;
-    @extend .flex;
-    @extend .flex-justify-end;
-    @extend .flex-align-center;
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    height: 6rem;
-
-    li {
-      padding: 0 1.6rem;
-      cursor: pointer;
-    }
-  }
 }
 
-
-.logo-container {
+.logo {
   position: absolute;
 }
 
-.logo-size {
+.logo-img {
   width: 5rem;
   height: 5rem;
   padding: 1rem;
   border-radius: 50%;
 }
 
-.menu-hamburger {
+.menu-mobile {
   display: none;
 }
 
+.menu-wrapper {
+  position: relative;
+  @include flex();
+  @include justify-content(flex-end);
+  @include align-items(center);
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  height: 6rem;
+}
+
+.menu-item {
+  padding: 0 1.6rem;
+  cursor: pointer;
+}
+
 /****** ANIMATION FOR MENU ******/
-.menu-animation {
+.item-animation {
   position: relative;
   display: block;
   cursor: pointer;
@@ -80,13 +80,13 @@ nav {
 
 }
 
-.menu-animation:hover:before {
+.item-animation:hover:before {
   background: $color_primary;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.menu-animation:hover:after {
+.item-animation:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
@@ -94,9 +94,9 @@ nav {
 
 /****** STYLES FOR HERO ******/
 .hero {
-  @extend .flex;
-  @extend .flex-justify-center;
-  @extend .flex-align-center;
+  @include flex();
+  @include justify-content(center);
+  @include align-items(center);
   width: 100%;
   height: 100vh;
   background-image: url("/images/hero-min.png");
@@ -140,12 +140,19 @@ nav {
 /****** SECTION ABOUT ******/
 .about {
   margin-bottom: $margin-section;
-  p {
-    font-size: 1.5rem;
-    color: $color_gray;
-    line-height: 2;
-    text-align: center;
-  }
+}
+
+.about-content {
+  @include flex();
+  @include justify-content(center);
+  @include align-items(center);
+}
+
+.about-text {
+  font-size: 1.5rem;
+  color: $color_gray;
+  line-height: 2;
+  text-align: center;
 }
 
 /****** SECTION PROJECTS ******/
@@ -153,7 +160,11 @@ nav {
   margin-bottom: $margin-section;
 }
 
-.img-container {
+.projects-wrapper {
+  @include flex();
+}
+
+.project-container {
   flex: 25%;
   max-height: 17rem;
   margin: 3rem;
@@ -185,7 +196,7 @@ nav {
   cursor: pointer;
 }
 
-.content-image {
+.project-image {
   width: 100%;
 }
 
@@ -200,13 +211,13 @@ nav {
   opacity: 0;
   transform: translate(-50%, -50%);
   transition: all 0.3s ease-in-out 0s;
-  h3 {
+  .content-title {
     color: $color_white;
     font-weight: 900;
     margin-bottom: 0.5em;
     text-transform: uppercase;
   }
-  p {
+  .content-text {
     color: $color_white;
     font-size: 1em;
   }
@@ -231,7 +242,12 @@ nav {
 }
 
 /****** STYLE FOR BUTTON ******/
-.button {
+.button-content {
+  @include flex();
+  @include justify-content(center);
+}
+
+.button-link {
   display: block;
   background: $color_primary;
   font-size: 1rem;
@@ -264,7 +280,12 @@ nav {
   background: $color_main;
 }
 
-.email {
+.contact-content {
+  @include flex();
+  @include justify-content(center);
+}
+
+.contact-email {
   padding-top: 2rem;
   margin-bottom: 2rem;
   font-size: 1.2rem;
