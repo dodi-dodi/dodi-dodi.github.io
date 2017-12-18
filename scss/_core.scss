@@ -53,7 +53,7 @@
 /****** ANIMATION FOR MENU ******/
 .item-animation {
   position: relative;
-  display: block;
+/*  display: block;*/
   cursor: pointer;
   &:hover {
     color: $color_primary;
@@ -288,5 +288,9 @@
   margin-right: 2rem;
   text-align: center;
   color: $color_black;
+  transition: all 0.3s ease-in-out 0s;
+  &:hover {
+    color: $color_black_light;
+  }
 }
 

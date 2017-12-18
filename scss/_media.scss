@@ -2,7 +2,6 @@
 
 @media (max-width: 576px) {
   .project-container {
-    //flex: 100%;
     @include flex-width(100%);
     max-height: 21rem;
   }
@@ -25,8 +24,14 @@
     display: none;
   }
   .menu-item {
-    padding: .6rem;
+    padding: .8rem;
     cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    &:hover {
+      color: $color_primary;
+    }
   }
   .menu-mobile {
     @include flex();
@@ -62,6 +67,4 @@
     margin: 0 3rem;
   }
 }
-
-
 
