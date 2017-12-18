@@ -11,5 +11,8 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-image": "^2.8.0",
     "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "jquery.scrollto": "^2.1.2"
   }
 }

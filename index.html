@@ -18,11 +18,11 @@
                 <img src="images/logo.png" class="logo-img" alt="dodi-dodi logo">
             </div>
             <div class="main-menu-content">
-                <div class="menu-mobile"><span id="menu-icon" data-menu-id="#main-menu">&#9776;</span></div>
+                <div class="menu-mobile"><span id="menu-icon">&#9776;</span></div>
                 <ul class="menu-wrapper" id="main-menu">
-                    <li class="menu-item"><span class="item-animation"><a href="#"></a>ABOUT</span></li>
-                    <li class="menu-item"><span class="item-animation"><a href=" #"></a>PROJECTS</span></li>
-                    <li class="menu-item"><span class="item-animation"><a href=" #"></a>CONTACT</span></li>
+                    <li class="menu-item" data-target="about"><span class="item-animation"><a href="#"></a>ABOUT</span></li>
+                    <li class="menu-item" data-target="projects"><span class="item-animation"><a href=" #"></a>PROJECTS</span></li>
+                    <li class="menu-item" data-target="contact"><span class="item-animation"><a href=" #"></a>CONTACT</span></li>
                 </ul>
             </div>
         </div>
@@ -33,7 +33,7 @@
     </div>
 </header>
 
-<section class="about">
+<section class="about" id="about">
     <h2 class="section-title">ABOUT</h2>
     <div class="container about-content">
         <p class="about-text">
@@ -54,7 +54,7 @@
     </div>
 </section>
 
-<section class="projects">
+<section class="projects" id="projects">
     <h2 class="section-title">PROJECTS</h2>
     <div class="container">
         <div class="projects-wrapper">
@@ -137,7 +137,7 @@
     </div>
 </section>
 
-<footer>
+<footer id="contact">
     <h2 class="section-title">CONTACT</h2>
     <div class="contact">
         <div class="container contact-content">
@@ -154,6 +154,8 @@
     </div>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/node_modules/jquery.scrollto/jquery.scrollTo.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
