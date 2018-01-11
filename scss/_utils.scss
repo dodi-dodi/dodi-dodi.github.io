@@ -5,6 +5,7 @@ $color_white: white;
 $color_gray: gray;
 
 $color_black_light: lighten($color_black, 20%);
+$color_primary_light: darken($color_primary, 40%);
 
 
 $container_max_width: 1200px;
