@@ -240,6 +240,7 @@
   @include flex();
   @include justify-content(center);
   a {
+    border: 3px solid transparent;
     padding: .7rem 1rem;
     display: block;
     background: $color_primary;
@@ -262,24 +263,26 @@
 /****** SECTION CONTACT ******/
 .contact {
   height: 12rem;
-  background: $color_main;
 }
 
-.contact-content {
-  @include flex();
-  @include justify-content(center);
+.contact-info {
+  font-size: 1.3rem;
+  color: $color_gray;
+  text-align: center;
 }
-
 .contact-email {
   padding-top: 2rem;
   margin-bottom: 2rem;
   font-size: 1.2rem;
   font-weight: bold;
-  border-bottom: 2px solid $color_black;
+  text-decoration: underline;
+  text-align: center;
 }
 
 .icon-container {
+  display: block;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .icon {
@@ -292,3 +295,14 @@
   }
 }
 
+/****** FOOTER ******/
+.footer {
+  @include flex();
+  @include justify-content(center);
+  @include align-items(center);
+  background-color: $color_main;
+  color: $color_primary;
+  font-size: 1.2rem;
+  font-weight: 700;
+  height: 5rem;
+}
