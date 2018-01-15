@@ -12,6 +12,8 @@ $root_font_size: 16px;
 $base_line_height: 1.5;
 $base_font_family: "Lato", sans-serif;
 $margin-section: 7rem;
+$side-mobile-margin: 0 2.5rem;
+$nav-height: 6rem;
 
 
 @mixin flex() {
@@ -39,3 +41,6 @@ $margin-section: 7rem;
   height: $height;
 }
 
+@mixin text-align($text-align) {
+  text-align: $text-align;
+}

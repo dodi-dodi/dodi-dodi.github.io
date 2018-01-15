@@ -6,15 +6,15 @@
     max-height: 21rem;
   }
   .about {
-    margin: 0 3rem;
+    margin: $side-mobile-margin;
   }
   .autotype-text {
     display: none;
   }
   .mobile-text {
     display: block;
-    margin: 0 3rem;
-    text-align: center;
+    margin: $side-mobile-margin;
+    @include text-align(center);
   }
 
   .menu-wrapper {
@@ -22,13 +22,14 @@
     @include justify-content(center);
     height: 10rem;
     display: none;
+    background: $color_main;
   }
   .menu-item {
     padding: .8rem;
     cursor: pointer;
     display: block;
     width: 100%;
-    text-align: center;
+    @include text-align(center);
     &:hover {
       color: $color_primary;
     }
@@ -39,6 +40,9 @@
     font-size: 2rem;
     padding: 1rem;
     cursor: pointer;
+  }
+  .contact-info {
+    margin: $side-mobile-margin;
   }
 }
 
@@ -57,14 +61,14 @@
   }
   .mobile-text {
     display: block;
-    margin: 0 3rem;
-    text-align: center;
+    margin: $side-mobile-margin;
+    @include text-align(center);
   }
 }
 
 @media (max-width: 1140px) {
   .about {
-    margin: 0 3rem;
+    margin: $side-mobile-margin;
   }
 }
 
