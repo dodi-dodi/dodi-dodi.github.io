@@ -1,5 +1,3 @@
-/****** MEDIA QUERIES ******/
-
 @media (max-width: 576px) {
   .project-container {
     @include flex-width(100%);
@@ -22,7 +20,7 @@
     @include justify-content(center);
     height: 10rem;
     display: none;
-    background: $color_main;
+    background: $color_white;
   }
   .menu-item {
     padding: .8rem;

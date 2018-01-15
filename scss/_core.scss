@@ -1,4 +1,4 @@
-/****** STYLES FOR HEADER ******/
+/****** HEADER ******/
 .section-title {
   @include text-align(center);
   color: $color_black_light;
@@ -54,7 +54,6 @@
 /****** ANIMATION FOR MENU ******/
 .item-animation {
   position: relative;
-/*  display: block;*/
   cursor: pointer;
   &:hover {
     color: $color_primary;
@@ -90,10 +89,11 @@
   transition: 0s;
 }
 
-/****** STYLES FOR HERO ******/
+/****** SECTION HERO ******/
 .hero-content {
   padding-top: $nav-height;
 }
+
 .hero {
   @include flex();
   @include justify-content(center);
@@ -239,7 +239,6 @@
   top: 80%;
 }
 
-/****** STYLE FOR BUTTON ******/
 .projects-link {
   @include flex();
   @include justify-content(center);
@@ -262,7 +261,6 @@
     }
   }
 }
-
 
 /****** SECTION CONTACT ******/
 .contact {
