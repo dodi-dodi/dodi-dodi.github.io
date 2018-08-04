@@ -37,7 +37,7 @@ gulp.task('sass:watch', function () {
 });
 
 // browser sync wachting on SCSS files and html files
-gulp.task('sync', ['sass:watch'], function () {
+gulp.task('sync', ['sass', 'sass:watch'], function () {
     browserSync.init({
         server: "."
     });
