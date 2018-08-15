@@ -1,179 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="portfolio">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <title>Portfolio - Dorota Durlej</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="portfolio">
+  <title>Portfolio - Dorota Durlej</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+  <link rel="manifest" href="images/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
 <header>
-    <nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" class="logo-img" alt="dodi-dodi logo">
-            </div>
-            <div class="main-menu-content">
-                <div class="menu-mobile"><span id="menu-icon">&#9776;</span></div>
-                <ul class="menu-wrapper" id="main-menu">
-                    <li class="menu-item" data-target="about">
-                        <span class="item-animation"><a href="#"></a>ABOUT</span>
-                    </li>
-                    <li class="menu-item" data-target="projects">
-                        <span class="item-animation"><a href=" #"></a>PROJECTS</span>
-                    </li>
-                    <li class="menu-item" data-target="contact">
-                        <span class="item-animation"><a href=" #"></a>CONTACT</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="hero-content">
-        <div class="hero">
-            <h1 class="autotype-text">Hi! I'm Dorota, <span>Junior Frontend Developer</span></h1>
-            <h1 class="mobile-text">Hi! I'm Dorota <span> <br>Junior Frontend Developer</span></h1>
-        </div>
+  <nav class="nav">
+    <div class="logo">
+      <img src="images/dorota-durlej-logo.svg" class="logo__img" alt="dodi-dodi logo">
+      <div class="logo__caption">
+        <span class="logo__text logo__text--name">Dorota Durlej</span>
+        <span class="logo__text logo__text--position">FRONT-END DEVELOPER</span>
+      </div>
     </div>
+    <div class="menu">
+      <div class="menu-mobile"><span id="menu-icon">&#9776;</span></div>
+      <ul class="menu__content" id="main-menu">
+        <li class="menu__list slide_to" data-target="about">
+          <a href="#about" class="menu__item menu__item--link">ABOUT ME</a>
+        </li>
+        <li class="menu__list slide_to" data-target="projects">
+          <a href="#projects" class="menu__item menu__item--link">PROJECTS</a>
+        </li>
+        <li class="menu__list slide_to" data-target="contact">
+          <a href="#contact" class="menu__item menu__item--link">CONTACT</a>
+        </li>
+        <li class="menu__list link-linkedin">
+          <a href="https://www.linkedin.com/in/dorotadurlej/" target="_blank" class="menu__item menu__item--label">
+            LINKEDIN <i class="fab fa-linkedin-in icon-label"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="hero">
+    <div class="hero__content">
+      <h1 class="hero__welcome section__heading section__heading--hero">
+        Hi! I'm Dorota!<br>
+        Front-end Developer.
+      </h1>
+      <p class="hero__description">
+        Templates coding from graphical desings.<br>
+        Focussing on React single page applications.<br>
+        My technology stack: ES6, ReactJS, jQuery,<br>
+        SASS, LESS, Bootstrap, Gulp, Webpack, NodeJS.
+      </p>
+    </div>
+  </div>
 </header>
 
 <section class="about" id="about">
-    <h2 class="section-title">ABOUT</h2>
-    <div class="container about-content">
-        <p class="about-text">
-            Hi, my name is Dorota and I am a beginner Frontend Developer. I have already had the opportunity to work on
-            a commercial project, where I joined a team that was working on CMS for chatbots. I have learned how to work
-            in the Scrum methodology, use JIRA and GIT
+  <div class="container">
+    <p class="heading__additional heading__additional--about">DOROTA DURLEJ</p>
+    <h2 class="section__heading section__heading--about">ABOUT ME</h2>
+    <div class="about__content">
+      <div class="about__text">
+        <p class="about__description about__description--large">
+          Almost year of commercial experience in frontend development,
+          2 years in total. I am always ready for new challenges.
         </p>
-        <p class="about-text">
-            I have a knowledge of HTML, CSS and SASS, some JavaScript, jQuery and React, and Bootstrap 4
-            framework. I can create RWD websites with Flexbox and Grid.
+        <p class="about__description about__description--small">
+          If You are looking for freelancer or an employee to hire go on and get in touch with me!
         </p>
-        <p class="about-text">
-            In the PROJECTS section I have published my work, which I developed as a part of my learning. Take some time
-            to play Tic Tac Toe built in React, and plan your day using Kanban, built with jQuery.
-        </p>
-        <p class="about-text">
-            I am currently looking for full-time employment in Warsaw, where I will be able to develop my skills under
-            the supervision of more experienced colleagues. I am open to any suggestions and I invite you to contact me.
-        </p>
+      </div>
+      <div class="about__image">
+        <img src="images/portret-about.png" alt="about image">
+      </div>
+      <div class="about__links">
+        <a class="about__link about__link--freelancer slide_to" href="#contact" data-target="contact">
+          I need a freelancer!
+          <img class="link__img" src="images/kite.svg" alt="">
+        </a>
+        <a class="about__link about__link--hire slide_to" href="#contact" data-target="contact">
+          I’m looking to hire!
+          <img class="link__img" src="images/job.svg" alt="">
+        </a>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="projects" id="projects">
-    <h2 class="section-title">PROJECTS</h2>
-    <div class="container">
-        <div class="projects-wrapper">
-            <div class="project-container">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="project-image" src="/images/framework.png" alt="framework project">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Framework</h3>
-                        <p class="content-text">HTML, CSS/SASS, RWD, JavaScript</p>
-                        <a class="content-link" href="https://dodi-dodi.github.io/framework/" target="_blank">Demo</a>
-                        <a class="content-link" href="https://github.com/dodi-dodi/framework" target="_blank">Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="project-image" src="/images/picture_perfect-min.png" alt="picture perfect project">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Picture perfect</h3>
-                        <p class="content-text">HTML, CSS, SASS, RWD</p>
-                        <a class="content-link" href="https://dodi-dodi.github.io/picture_perfect/" target="_blank">Demo</a>
-                        <a class="content-link" href="https://github.com/dodi-dodi/picture_perfect" target="_blank">Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="project-image" src="/images/your_life2.png" alt="layout project">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Your life</h3>
-                        <p class="content-text">HTML, CSS/SASS, Bootstrap, jQuery</p>
-                        <a class="content-link" href="https://dodi-dodi.github.io/your_life/" target="_blank">Demo</a>
-                        <a class="content-link" href="https://github.com/dodi-dodi/your_life" target="_blank">Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="project-image" src="/images/kanban-min.png" alt="kanban project">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Kanban</h3>
-                        <p class="content-text">HTML, CSS/SASS, jQuery, AJAX</p>
-                        <a class="content-link" href="https://dodi-dodi.github.io/kanban/"  target="_blank">Demo</a>
-                        <a class="content-link" href="https://github.com/dodi-dodi/kanban"  target="_blank">Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="project-image" src="/images/random_quote-min.png" alt="random quote project">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Random quote machinee</h3>
-                        <p class="content-text"> HTML, CSS/SASS, jQuery, AJAX</p>
-                        <a class="content-link" href="https://dodi-dodi.github.io/random-quote/" target="_blank">Demo</a>
-                        <a class="content-link" href="https://github.com/dodi-dodi/random-quote" target="_blank">Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="content">
-                    <div class="content-overlay"></div>
-                    <img class="project-image" src="/images/tic_tac_toe_gray-min.png" alt="tic tac toe project">
-                    <div class="content-details fadeIn-bottom">
-                        <h3 class="content-title">Tic Tac Toe</h3>
-                        <p class="content-text">HTML, CSS/SASS, ReactJS</p>
-                        <a class="content-link" href="https://dodi-dodi.github.io/tic-tac-toe/" target="_blank">Demo</a>
-                        <a class="content-link" href="https://github.com/dodi-dodi/tic-tac-toe" target="_blank">Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="projects-link">
-            <a class="" href="https://github.com/dodi-dodi" target="_blank"><span>More on github</span></a>
-        </div>
+  <p class="heading__additional heading__additional--projects">MY WORK</p>
+  <h2 class="section__heading section__heading--projects">PROJECTS</h2>
+  <script id="project-list" type="text/x-handlebars-template">
+    {{#each projects}}
+    <div class="container project">
+      {{#if_modulo @index 2}}
+      <div class="project__picture">
+        <img src="images/{{image}}" alt="">
+        <div class="project__number">{{inc @index}}</div>
+      </div>
+      {{/if_modulo}}
+
+      <div class="project__features">
+        <p class="project__title">{{title}}</p>
+        <p class="project__description">{{description}}</p>
+        {{#if demo}}
+        <a class="project__link project__link--demo" href="{{demo}}" target="_blank">
+          LIVE DEMO <span class="project-line">|</span>
+        </a>
+        {{/if}}
+        <a class="project__link project__link--github" href="{{github}}" target="_blank">
+          GITHUB SOURCE
+        </a>
+      </div>
+
+      {{#if_not_modulo @index 2}}
+      <div class="project__picture">
+        <div class="project__number">{{inc @index}}</div>
+        <img src="images/{{image}}" alt="">
+      </div>
+      {{/if_not_modulo}}
     </div>
+    {{/each}}
+  </script>
 </section>
 
-<section id="contact">
-    <h2 class="section-title">CONTACT</h2>
-    <div class="container">
-        <div class="contact-content">
-            <p class="contact-info">If you want to work with me or just talk, feel free to contact me:</p>
-            <p class="contact-email">&#100;&#111;&#114;&#111;&#116;&#097;&#046;&#100;&#117;&#114;&#108;&#101;&#106;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</p>
-            <div class="icon-container">
-                <a href="https://github.com/dodi-dodi" target="_blank">
-                    <span class="icon"><i class="fa fa-github fa-2x"></i></span>
-                </a>
-                <a href="https://www.linkedin.com/in/dorotadurlej/" target="_blank">
-                    <span class="icon"><i class="fa fa-linkedin fa-2x"></i></span>
-                </a>
-            </div>
-        </div>
+<section id="contact" class="contact">
+  <p class="heading__additional heading__additional--contact">GET IN TOUCH</p>
+  <h2 class="section__heading section__heading--contact">CONTACT</h2>
+  <!--google map-->
+  <iframe width="100%" height="300" frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.7124484069036!2d21.00849331564332!3d52.23044187976035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccf314640621%3A0x8c28fed081bc0aa5!2sCentrum!5e0!3m2!1spl!2spl!4v1533460182609">
+  </iframe>
+  <!--end of google map-->
+  <div class="container">
+    <div class="contact__content">
+      <!--<div class="contact__image">-->
+      <img class="contact__image" src="images/portret-contact.png" alt="">
+      <!--</div>-->
+      <a class="contact__link"
+         href="mailto:&#100;&#111;&#114;&#111;&#116;&#097;&#046;&#100;&#117;&#114;&#108;&#101;&#106;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
+        <span class="link-caption link-caption--mail">MAIL ME</span>
+        <i class="far fa-envelope  contact__icon contact__icon--mail"></i>
+        <span class="line">|</span>
+      </a>
+      <a class="contact__link" href="https://github.com/dodi-dodi" target="_blank">
+        <span class="link-caption link-caption--github">GITHUB</span>
+        <i class="fab fa-github-alt contact__icon contact__icon--github"></i>
+        <span class="line">|</span>
+      </a>
+      <a class="contact__link" href="https://www.linkedin.com/in/dorotadurlej/" target="_blank">
+        <span class="link-caption link-caption--linkedin">LINKEDIN</span>
+        <i class="fab fa-linkedin-in contact__icon contact__icon--linkedin"></i>
+      </a>
     </div>
+  </div>
 </section>
 
 <footer class="footer">
-    <p>Copyright &copy; 2017 Dorota Durlej</p>
+  <div class="container footer__content">
+    <p class="footer__text footer__text--copyright">Copyright &copy; 2017 Dorota Durlej</p>
+    <p class="footer__text footer__text--designed">Designed By: Bożena Biłko</p>
+  </div>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/jquery.scrollTo.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
-
-
