@@ -348,13 +348,21 @@ header {
     &__link {
       @include font-style($size: 1rem, $color: $color_primary);
       text-decoration: none;
+      line-height: 1.4rem;
+      padding: 0 .5rem;
+      &:hover {
+        @include font-style($size: larger, $color: $color_primary);
+        padding: 0;
+        transition: all 0.1s ease;
+      }
     }
   }
   @media(max-width: 1240px) {
     margin: 0 1rem;
   }
   .project-line {
-    margin: 0 .5rem;
+    margin: 0 .3rem;
+    @include font-style($color: $color_primary);
   }
 }
 

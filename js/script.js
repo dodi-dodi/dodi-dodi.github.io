@@ -73,7 +73,7 @@ const projects = [
   },
   {
     title: 'Tic Tac Toe',
-    description: 'A Player vs Player game from our childchood. Written in ReactJS and best practices in mind.',
+    description: 'A Player vs Player game from our childhood. Written in ReactJS and best practices in mind.',
     github: 'https://github.com/dodi-dodi/tic-tac-toe',
     demo: 'https://dodi-dodi.com/tic-tac-toe/',
     image: 'tic-tac-toe.png',
