@@ -47,14 +47,14 @@ const projects = [
     title: 'Web Framework',
     description: 'A dependency free, fully featured web framework inspired by Bootstrap and Material.',
     github: 'https://github.com/dodi-dodi/framework',
-    demo: 'https://dodi-dodi.com/framework/',
+    demo: 'https://dorotadurlej.com/framework/',
     image: 'web-framework.png',
   },
   {
     title: 'Picture perfect',
     description: 'My example of single page website coded with SASS only.',
     github: 'https://github.com/dodi-dodi/picture_perfect',
-    demo: 'https://dodi-dodi.com/picture_perfect/',
+    demo: 'https://dorotadurlej.com/picture_perfect/',
     image: 'picture_perfect.png',
   },
   {
@@ -68,14 +68,14 @@ const projects = [
     title: 'Kanban board',
     description: 'Keep track of your tasks on a Kanban board. Add, remove and move task cards around.',
     github: 'https://github.com/dodi-dodi/kanban',
-    demo: 'https://dodi-dodi.com/kanban/',
+    demo: 'https://dorotadurlej.com/kanban/',
     image: 'kanban_board.png',
   },
   {
     title: 'Tic Tac Toe',
     description: 'A Player vs Player game from our childhood. Written in ReactJS and with the best practices in mind.',
     github: 'https://github.com/dodi-dodi/tic-tac-toe',
-    demo: 'https://dodi-dodi.com/tic-tac-toe/',
+    demo: 'https://dorotadurlej.com/tic-tac-toe/',
     image: 'tic-tac-toe.png',
   }
 ];
