@@ -340,6 +340,7 @@ header {
       @include font-style($size: 22rem, $color: $color_texts_background);
       height: 256px;
       opacity: 0.95;
+      line-height: 0;
       @media(max-width: 1200px) {
         display: none;
       }

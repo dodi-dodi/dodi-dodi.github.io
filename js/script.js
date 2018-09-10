@@ -44,6 +44,13 @@ function renderTemplate(tag, context) {
 
 const projects = [
   {
+    title: 'Cuteness',
+    description: 'Cute creatures created in pure CSS to make you feel happy. Creatures behave politely on desktop in the latest versions of browsers: Chrome, Opera and Firefox. Please, do not feed the creatures!',
+    github: 'https://github.com/dodi-dodi/drawings',
+    demo: 'https://dorotadurlej.com/drawings/',
+    image: 'cuteness.png',
+  },
+  {
     title: 'Web Framework',
     description: 'A dependency free, fully featured web framework inspired by Bootstrap and Material.',
     github: 'https://github.com/dodi-dodi/framework',
