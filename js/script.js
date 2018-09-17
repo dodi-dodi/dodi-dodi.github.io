@@ -68,7 +68,7 @@ const projects = [
     title: 'Weather app',
     description: 'Another hot day… are you fed up with them already? Check the five day forecast!',
     github: 'https://github.com/dodi-dodi/weather',
-    demo: null,
+    demo: 'https://dorotadurlej.com/weather/',
     image: 'weather_app.png',
   },
   {
