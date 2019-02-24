@@ -72,13 +72,6 @@ const projects = [
     image: 'weather_app.png',
   },
   {
-    title: 'Kanban board',
-    description: 'Keep track of your tasks on a Kanban board. Add, remove and move task cards around.',
-    github: 'https://github.com/dodi-dodi/kanban',
-    demo: 'https://dorotadurlej.com/kanban/',
-    image: 'kanban_board.png',
-  },
-  {
     title: 'Tic Tac Toe',
     description: 'A Player vs Player game from our childhood. Written in ReactJS and with the best practices in mind.',
     github: 'https://github.com/dodi-dodi/tic-tac-toe',
